@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Connect
+        </title>
+
+        <!--internal style for icons-->
+        <style>
+            /*icons styling*/
+            .pic {
+                border: 1px solid #000;  
+                float: left;
+                height: 45px;
+                width: 43px;
+                margin: 10px;
+                overflow: hidden;
+            }
+
+            /*pic hover effect*/
+            .morph:hover {
+                transition: all 0.5s ease;
+                transform: scale(1.2);
+            }
+        </style>
+
+        <!--opens the pop up window-->
+        <script type="text/javascript">
+            function sendmail() {
+
+                window.open("../HTML_Files/popupform.html", "ContactUs", "width=250,height=500");
+
+            }
+        </script>
+    </head>
+    <body>
+        <!--icons-->
+        <a href="https://plus.google.com/u/0/102442746175110769501/posts">
+            <div class="morph pic">
+                <img src="../IMAGES/g+.png" style="width:42px;height:42px;border:0;">
+            </div></a> &nbsp; &nbsp;
+        <div class="morph pic">
+            <img onclick="sendmail();" src="../IMAGES/gmail.png" style="width:42px;height:42px;border:0;">
+        </div>
+    </body>
+</html>

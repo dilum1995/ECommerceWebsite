@@ -1,0 +1,472 @@
+/*body*/
+body {
+    background-color: #000;
+}
+
+
+
+/*navigation bar length on top*/
+#nav {
+    width: 100%;
+}
+/*navigation bar*/
+#navUL {
+    list-style-type: none;
+    margin: 10px 0px 0px;
+    padding: 0px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #333;
+}
+/*nav bar elements*/
+#navLI {
+    width: 100px;
+    float: left;
+}
+/*nav bar link*/
+#navLINK {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+/*nav bar element animation*/
+#navLI:hover {
+    transition:all 0.4s ease;
+    background-color: #1E90FF;     
+    transform: scale(1.1);
+
+}
+
+
+
+/*nav side bar on left*/
+#navDETAIL {
+    line-height: 10px;
+    height: auto;
+    width: 18%;
+    float: left;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #f90;
+    margin: 2px;
+    color: #fff;
+}
+/*side bar un-ordered list*/
+#navDETAIL ul {
+    list-style: square;
+    color: #fff;
+}
+/*nav side bar animation*/
+#navDETAIL li:hover{
+    font-size: larger;
+    transition:all 0.4s ease;
+}
+/*nav side bar heading*/
+#category {
+    text-align: center;
+    color:white;
+}
+/*nav side bar links*/
+#navDETAIL a {
+    text-decoration: none;
+    color:white;
+}
+
+
+/*prdocut input field*/
+#prodcutID{
+    display: none;
+}
+/*table styling */
+#table {
+    float: left;
+    width: 60%;
+    margin: 7px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #f90;
+}
+/*table elements links*/
+#table a {
+    text-decoration: none;
+    color: #000;
+}
+/*center align text in each product item*/
+#table td {
+    transition: 0.4s ease;
+    text-align: center;
+    align-self: center;
+}
+/*product item animation*/
+#table td:hover {
+    transition:all 0.4s ease;
+    transform: scale(1.05);
+}
+/*to get the number of items*/
+#quantity{
+    width: 20%;
+}
+
+
+/*footer*/
+#footer {
+    color: #fff;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+/*form for each product*/
+#form {
+    border: 2px solid #73AD21;
+    border-radius: 25px;
+    padding: 10px;
+    width: 250px;
+    height: 480px;
+}
+/*items in each category*/
+#item {
+    background-color: #E5E4E2;
+    padding: 5px;
+}
+/*item image in each category*/
+#itemIMG {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/*styling for the login part*/
+#login {
+    top: 150px;
+    left: 1068px;
+    color: #fff;
+    width: 17%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #f90;
+    float: left;
+    margin: 1px;
+}
+/*login,signup,view cart button styling*/
+#loginBtn,#signBtn,#viewBtn{
+    margin-top: 15px;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    width:100%;
+    padding: 5px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border: none;
+    color: #000;
+    background-color: #fff;
+}
+#loginBtn:hover {
+    transition: 0.4s ease;
+    background-color: #f44336;
+    color:#fff;
+}
+#viewBtn:hover{
+    transition: 0.4s ease;
+    background-color: #0ca8c7;
+    color:#fff;
+}
+
+
+
+/*sign up button animation*/
+#signBtn:hover{
+    transition: 0.4s ease;
+    background-color: #73AD21;
+    color:#fff;
+}
+
+
+
+/*sign up form button styling*/
+#signBtn1 {
+    border: 2px solid #73AD21;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    width:209px;
+    padding: 5px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+}
+/*sign up form button hover animation*/
+#signBtn1:hover{
+    transition: 0.4s ease;
+    background-color: #73AD21;
+    color:#fff;
+}
+
+
+
+/*map*/
+#map {
+    width:100%;
+    height: 400px;
+}
+
+
+
+/*stylying for displaying score and result in the quiz*/
+#QA{
+    float:left;
+    margin:5px;
+    width: 17%;
+}
+#score, #result{
+    border: 1px solid black;
+    background-color: #F5F5DC;
+    padding: 15px;
+}
+/*count down*/
+#count{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #f90;
+    font-size: 33px;
+    color: #fff;
+    width: 100%; 
+}
+/*check,clear,checkout,remove button styling*/
+#checkBtn, #clearBtn {
+    border: 2px solid #000;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    width:209px;
+    padding: 5px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+}
+/*check,clear,checkout,remove button hover*/
+#checkBtn:hover, #clearBtn:hover{
+    transition: 0.4s ease;
+    background-color: #000;
+    color:#fff;
+}
+#cartCheck{
+    border: 2px solid #000;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    width:209px;
+    padding: 5px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+}
+#cartCheck:hover{
+    transition: 0.4s ease;
+    background-color: #000;
+    color:#fff;
+}
+
+
+
+/*cv label*/
+label{
+    font-weight: bold;
+}
+/*cv styling*/
+#page-wrap * { 
+    margin: 0; 
+    padding: 0; 
+}
+/*cv body*/
+#page-wrap body { 
+    font: 14px Helvetica, Sans-Serif; 
+    line-height: 20px; 
+    background: url("../IMAGES/noise.jpg"); 
+}
+/*class clear*/
+.clear { 
+    clear: both; 
+}
+/*id page wrap*/
+#page-wrap { 
+    width: 660px; 
+    margin: 40px auto 60px; 
+}
+/*image*/
+#pic { 
+    float: right;
+}
+/*heading1 tag*/
+#page-wrap h1 { 
+    margin: 0 0 16px 0; 
+    padding: 0 0 16px 0; 
+    font-size: 42px; 
+    font-weight: bold; 
+    letter-spacing: -2px; 
+    border-bottom: 1px solid #999; 
+}
+/*heading2 tag*/
+#page-wrap h2 { 
+    font-size: 17px; 
+    margin: 0 0 6px 0; 
+    position: relative; 
+}
+/*heading2 span tag*/
+#page-wrap h2 span { 
+    bottom: 0; right: 0; 
+    font-style: italic; 
+    font-family: Georgia, Serif; 
+    font-size: 14px; color: #999; 
+    font-weight: normal; 
+}
+/*paragraph tag*/
+#page-wrap p { 
+    margin: 0 0 16px 0; 
+}
+/*link*/
+#page-wrap a { 
+    color: #999; 
+    text-decoration: none; 
+    border-bottom: 1px dotted #999; 
+}
+/*link hover*/
+#page-wrap a:hover { 
+    border-bottom-style: solid; 
+    color: black; 
+}
+/*un-ordered list*/
+#page-wrap ul { 
+    margin: 0 0 32px 17px; 
+}
+/*id at the begining of the cv for introduction*/
+#objective { 
+    width: 370px; 
+    float: left; 
+}
+/*paragraph tag inside objective id*/
+#objective p { 
+    font-family: Georgia, Serif; 
+    font-style: italic; 
+    color: #666; 
+}
+/*defines a term/name in a description list*/
+#page-wrap dt { 
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 17px; 
+    text-align: right; 
+    padding: 0 5px 0 0; 
+    width: 100px; 
+    float: left; 
+    height: 75px; 
+    border-right: 1px solid #999;  
+}
+/*describes each term/name*/
+#page-wrap dd { 
+    width: 550px; 
+    float: right; 
+}
+/*clear class*/
+dd.clear { 
+    float: none; 
+    margin: 0; 
+    height: 15px; 
+}
+
+
+
+/*navigation at the footer*/
+#bottom{
+    text-align: center;
+    color: #fff;
+}
+/*footer links*/
+#bottom a {
+    text-decoration: none;
+    color: #fff;
+}
+/*footer links hover*/
+#bottom a:hover {
+    transition: 0.4s ease;
+    color: #f44336;
+
+}
+
+
+
+/*site map links*/
+#siteMap a:hover{
+    transition: 0.4s ease;
+    color: #FF0000;
+}
+
+
+
+/*connect with styling*/
+#footerConnect{
+    width: 52%;
+    float:left;
+    text-align: center;
+    background-color: #000;
+    margin-left: 60px;
+}
+
+
+
+/*adding to cart button*/
+#cart {
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*style for shopping cart output*/
+#cartName {
+    margin: 2px;
+    font-size: 12px;
+    width: 100%;
+}
+#cartName th {
+    border-bottom: 1px solid #fff;
+}
+/*style of shopping cart bottom*/
+#top {
+    border-top: 1px solid #fff;
+}
+/*buttons in commenting*/
+#commentadd,#clear,#help{
+    border: 2px solid #73AD21;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    width:120px;
+    padding: 5px 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+}
+/*buttons in comment animation*/
+#commentadd:hover,#clear:hover,#help:hover{
+    transition: 0.4s ease;
+    color: #fff;
+    background-color: #73AD21;
+}
+
+

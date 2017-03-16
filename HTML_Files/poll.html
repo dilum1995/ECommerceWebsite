@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+            function getVote(int) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                        document.getElementById("poll").innerHTML = xmlhttp.responseText;
+                    }
+                };
+                xmlhttp.open("GET", "../PHP_Files/poll_vote.php?vote=" + int, false);
+                xmlhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+
+        <!--part containing the selections-->
+        <div id="poll">
+            <p id="category"><strong>What is the best sport?</strong>
+            </p>
+            <hr noshade>
+            <form>
+                <small> Badminton: </small>
+                <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+                <br><br> <small> Swimming: </small>
+                <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+                <br><br> <small> Tennis: </small>
+                <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
+                <br><br>
+            </form>
+        </div>
+
+    </body>
+</html>
